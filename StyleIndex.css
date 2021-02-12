@@ -1,0 +1,347 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #000000;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    color: white;
+    font-size: 16px;
+    font-family:'Goldman', cursive;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+hr {
+    margin: 10px 0;
+}
+
+.Contenedor {
+    width: 90%;
+    margin: auto;
+}
+
+/*Menu, compuesta de 3 elementos, h1:CS - ul: ul:Opciones ^ ul:Busqueda*/
+
+.Menu {
+    font-size: 17px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    padding: 20px 0;
+}
+
+.MenuR {
+    position: absolute;
+    cursor: pointer;
+    top: 15px;
+    right: 30px;
+    z-index: 5;
+    font-size: 25px;
+    display: none;
+}
+
+.CS {
+    font-size: 45px;
+}
+
+.Menu ul {
+    display: flex;
+}
+
+.Menu ul li {
+    padding: 10px;
+}
+
+.Menu ul li a:hover {
+    border-bottom: 2px solid white;
+}
+
+.Menu ul.Opciones {
+    flex: 1;
+    margin-left: 30px;
+}
+
+/*Sevicios, Logos - Animaciones - Ediciones - Desarrollo web - Video Juegos */
+
+.Logos {
+    width: 100%;
+    height: 500px;
+    display: flexbox;
+    background: url('./Recusos/Imagenes/Molly\ Moon´s\ 2.png') center/cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.Servicios2 {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+} 
+
+.Animaciones {
+    width: 49%;
+    height: 300px;
+    background: url(./Recusos/Imagenes/Animacion\ Logo.jpg) center/cover;
+    border-radius: 10px;
+}
+
+.Ediciones {
+    width: 49%;
+    height: 300px;
+    background: url(./Recusos/Imagenes/Editores.jpg) center/cover;
+    border-radius: 10px;
+}
+
+.Servicios3 {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 5px;
+    margin-bottom: 5px;
+} 
+
+.Web {
+    width: 49%;
+    display: flex;
+    height: 300px;
+    align-items: flex-start;
+    background: url(./Recusos/Imagenes/Web2.jpg) center/cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+
+.VG {
+    width: 49%;
+    height: 300px;
+    display: flex;
+    align-items: flex-start;
+    background: url(./Recusos/Imagenes/VG.png) center/cover;
+    border-radius: 10px;
+}
+
+/*Animacion (Cargando)---------------------------------------------------------------------------*/
+
+.Cargando, .Cargando2 {
+    display: flex;
+    padding-left: 50px;
+    align-items: flex-end;
+    transform: translateY(-35px);
+    margin-top: 50px;
+    margin-left: 100px;
+}
+
+.Cargando span, .Cargando2 span {
+    width: 10px;
+    height: 10px;
+    background: #111;
+    height: calc(5px * var(--i));
+    justify-content: center;
+    align-items: flex-end;
+    margin: 0 5px;
+    display: flex;
+    animation: animate 2s linear infinite;
+    animation-delay: calc(0.25s * var(--i));
+}
+
+.Cargando span i, .Cargando2 span i {
+    display: block;
+    font-style: normal;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    transform: translateY(20px);
+    animation: animate2 2s linear infinite;
+    animation-delay: calc(0.25s * var(--i));
+}
+
+@keyframes animate {
+    0% {
+        background: #fff;
+        box-shadow: 0 0 10px #00b3ff, 0 0 20px #00b3ff, 0 0 40px #00b3ff, 0 0 80px #00b3ff
+        0 0 120px #00b3ff, 0 0 200px #00b3ff, 0 0 300px #00b3ff, 0 0 400px #00b3ff;
+    }
+
+    25%, 75% {
+        background: #111;
+        filter: blur(0px);
+        box-shadow: none
+    }
+
+    100% {
+        background: #fff;
+        box-shadow: 0 0 10px #00b3ff, 0 0 20px #00b3ff, 0 0 40px #00b3ff, 0 0 80px #00b3ff
+        0 0 120px #00b3ff, 0 0 200px #00b3ff, 0 0 300px #00b3ff, 0 0 400px #00b3ff;
+    }
+}
+
+@keyframes animate2 {
+    0% {
+        Color: #fff;
+        text-shadow: 0 0 10px #00b3ff, 0 0 20px #00b3ff, 0 0 40px #00b3ff, 0 0 80px #00b3ff
+        0 0 120px #00b3ff, 0 0 200px #00b3ff, 0 0 300px #00b3ff, 0 0 400px #00b3ff;
+    }
+
+    25%, 75% {
+        Color: #111;
+        text-shadow: none;
+    }
+
+    100% {
+        color: #fff;
+        text-shadow: 0 0 10px #00b3ff, 0 0 20px #00b3ff, 0 0 40px #00b3ff, 0 0 80px #00b3ff
+        0 0 120px #00b3ff, 0 0 200px #00b3ff, 0 0 300px #00b3ff, 0 0 400px #00b3ff;
+    }
+}
+
+/*---------------------------------------------------------------------------------------*/
+
+
+.Titulos {
+    cursor: pointer;
+    padding: 10px;
+    margin-top: 10px;
+    margin-left: 10px;
+    display: inline-block;
+    font-size: 20px;
+    transition: 0.5s;
+    border-radius: 10px;
+    background: gray;
+}
+
+.Titulos:hover {
+    color: white;
+    box-shadow: 0 0 10px white, 0 0 40px white, 0 0 80px white;
+}
+
+footer {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+/*Responsive*/
+
+@media (max-width: 800px) {
+
+    .CS {
+        font-size: 35px;
+        margin-left: 170px;
+    }
+
+    .MenuR {
+        display: block ;
+    }
+
+    .Menu ul.Opciones {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: gray;
+        height: 100%;
+        padding: 30px;
+        opacity: 0.9;
+        transform: translateX(-400px);
+        transition: transform 0.5s ease-in-out;
+    }
+
+    .Menu ul.Opciones.Activo {
+        transform: translateX(-50px);
+    }
+
+    .Menu ul.Busqueda {
+        margin-right: 10px;
+    }
+
+    .Menu ul li {
+        padding: 30px;
+    }
+
+    .Logos {
+        height: 300px;
+    }
+
+    .Servicios2 {
+        display: block;
+    }
+
+    .Animaciones {
+    width: 100%;
+    margin-bottom: 15px;
+    }
+    
+    .Ediciones {
+    width: 100%;
+    }
+
+    .Servicios3 {
+        display: block;
+        padding-top: 5px;
+    }
+
+    .Web {
+    width: 100%;
+    }
+
+    .VG {
+    width: 100%;
+    }
+
+    .Cargando {
+        margin-left: 230px;
+    }
+
+     .Cargando2 {
+        margin-left: 250px;
+    }
+
+
+}
+
+@media (max-width: 500px) {
+
+    .CS {
+        font-size: 20px;
+        margin-left: 10px;
+    }
+
+    .Cargando {
+        display: flex;
+        padding-left: 10px;
+        align-items: flex-end;
+        transform: translateY(50px);
+        margin-top: 50px;
+        margin-left: -160px;
+    }
+
+     .Cargando2 {
+        display: flex;
+        padding-left: 10px;
+        align-items: flex-end;
+        transform: translateY(50px);
+        margin-top: 50px;
+        margin-left: -140px;
+    }
+
+}
+
+
+
+
+
+
+
+
+

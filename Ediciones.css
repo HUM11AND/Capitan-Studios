@@ -1,0 +1,440 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #000000;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    color: white;
+    font-family:'Goldman', cursive;
+}
+
+.pagVid {
+    display: flex;
+    height: 100px;
+    font-size: 40px;
+    justify-content: center;
+}
+
+.Sub {
+    margin-left: 30px;
+    font-size: 40px;
+}
+
+.fas.fa-chevron-circle-left {
+    display: block;
+    font-size: 50px;
+    text-align: center;
+    padding-bottom: 10px;
+    cursor: pointer;
+    color: white;
+}
+
+footer {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/*Galeria----------------------------------------------------------------------------------------------------*/
+
+.Galeria {
+    display: grid;
+    height: 100%;
+    grid-template-columns: repeat(4, 300px);
+    grid-template-rows: repeat(3, 300px);
+    padding-top: 20px;
+    justify-content: center;
+}
+
+.Muestra1 {
+    width: 80%;
+    height: 80%;
+    object-fit: cover;
+    justify-self: center;
+    cursor: pointer;
+    transition: 0.5s ease-in;
+    border-radius: 15px;
+}
+
+/*.Muestra2 {
+    width: 80%;
+    height: 80%;
+    object-fit: cover;
+    justify-self: center;
+    cursor: pointer;
+    transition: 0.5s ease-in;
+    border-radius: 15px;
+}
+
+.Muestra3 {
+    width: 80%;
+    height: 80%;
+    background: white;
+    object-fit: contain;
+    justify-self: center;
+    cursor: pointer;
+    transition: 0.5s ease-in;
+    border-radius: 15px;
+}
+
+.Muestra4 {
+    width: 80%;
+    height: 80%;
+    object-fit: cover;
+    justify-self: center;
+    cursor: pointer;
+    transition: 0.5s ease-in;
+    border-radius: 15px;
+    border: white 1px solid;
+}
+
+.Muestra5 {
+    width: 80%;
+    height: 80%;
+    object-fit: cover;
+    justify-self: center;
+    cursor: pointer;
+    transition: 0.5s ease-in;
+    border-radius: 15px;
+}*/
+
+/*hover-----------------------------------------------------------------------------------------------------*/
+
+.Muestra1:hover {
+    transform: scale(0.8);
+}
+
+.Muestra2:hover {
+    transform: scale(0.8);
+}
+
+.Muestra3:hover {
+    transform: scale(0.8);
+}
+
+.Muestra4:hover {
+    transform: scale(0.8);
+}
+
+.Muestra5:hover {
+    transform: scale(0.8);
+}
+
+/*Reproductor------------------------------------------------------------------------------------------------*/
+
+.Reproductor1 {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: rgb(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(-100%);
+    transition: transform 0.4s ease-in;
+    z-index: 1;
+}
+
+.Reproductor2 {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: rgb(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(-100%);
+    transition: transform 0.4s ease-in;
+    z-index: 2;
+}
+
+.Reproductor3 {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: rgb(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(-100%);
+    transition: transform 0.4s ease-in;
+    z-index: 3;
+}
+
+.Reproductor3 {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: rgb(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(-100%);
+    transition: transform 0.4s ease-in;
+    z-index: 3;
+}
+
+.Reproductor4 {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: rgb(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(-100%);
+    transition: transform 0.4s ease-in;
+    z-index: 4;
+}
+
+.Reproductor5 {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: rgb(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(-100%);
+    transition: transform 0.4s ease-in;
+    z-index: 5;
+}
+
+.Video1 {
+    display: none;
+    height: 500px;
+    width: 800px;
+    border-radius: 15px;
+    border: solid white 2px;
+}
+
+.Video2 {
+    display: none;
+    height: 400px;
+    width: 700px;
+    border-radius: 15px;
+    border: solid white 2px;
+}
+
+.Video3 {
+    display: none;
+    height: 400px;
+    width: 700px;
+    border-radius: 15px;
+    border: solid white 2px;
+}
+
+.Video4 {
+    display: none;
+    height: 400px;
+    width: 500px;
+    border-radius: 15px;
+    border: solid white 2px;
+}
+
+.Video5 {
+    display: none;
+    height: 400px;
+    width: 700px;
+    border-radius: 15px;
+    border: solid white 2px;
+}
+
+.Descripcion {
+    position: fixed;
+    color: white;
+    bottom: 25px;
+    font-size: 25px;
+}
+
+.far.fa-times-circle {
+    position: absolute;
+    color: white;
+    top: 20px;
+    right: 20px;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+/*App-------------------------------------------------------------------------------------------------------*/
+
+.VisActv {
+    transform: translateX(0);
+}
+
+.PlayVid1 {
+    display: block;
+}
+
+.PlayVid2 {
+    display: block;
+}
+
+.PlayVid3 {
+    display: block;
+}
+
+.PlayVid4 {
+    display: block;
+}
+
+.PlayVid5 {
+    display: block;
+}
+
+/*Responsive------------------------------------------------------------------------------------------------*/
+
+@media (max-width: 1024px) {
+
+    .pagVid {
+        font-size: 30px;
+        padding-top: 15px;
+    }
+
+    .Sub {
+        font-size: 25px;
+    }
+    
+    .Galeria {
+        grid-template-columns: repeat(3,300px);
+        justify-content: center;
+        margin-right: 30px;
+    }
+
+    .ContenedorVid {
+        height: 70%;
+    }
+
+}
+
+@media (max-width: 900px) {
+
+    .pagVid {
+        font-size: 30px;
+        padding-top: 15px;
+    }
+
+    .Sub {
+        font-size: 25px;
+        margin-left: 3rem;
+    }
+    
+    .Galeria {
+        grid-template-columns: repeat(2,350px);
+        justify-content: center;
+        margin-left: 3rem;
+    }
+
+    .Video1 {
+        height: 400px;
+        width: 600px;
+        margin-right: 0.5rem;
+    }
+
+    .Video2 {
+        height: 400px;
+        width: 600px;
+        margin-right: 0.5rem;
+    }
+
+    .Video3 {
+        height: 400px;
+        width: 600px;
+        margin-right: 0.5rem;
+    }
+
+    .Video5 {
+        height: 400px;
+        width: 600px;
+        margin-right: 0.5rem;
+    }
+
+}
+
+@media (max-width: 520px) {
+
+    .pagVid {
+        font-size: 16px;
+        transform: translateY(20px);
+    }
+
+    .Sub {
+        font-size: 20px;
+        padding-top: 15px;
+        text-align: center;
+        transform: translateX(-25px);
+    }
+
+    .Galeria {
+        height: 100%;
+        grid-template-columns: repeat(1,300px);
+        grid-template-rows: repeat(5,300px);
+        justify-content: center;
+        margin-left: 2rem;
+    }
+
+    .Muestra4 {
+        height: 100%;
+    }
+    
+    .Muestra5 {
+        margin-top: 40px;
+    }
+
+    .ContenedorVid {
+        height: 40%;
+    }
+
+    .Descripcion {
+        font-size: 20px;
+    }
+
+    .fas.fa-chevron-circle-left {
+        font-size: 30px;
+    }
+
+    .Video1 {
+        height: 200px;
+        width: 300px;
+    }
+
+    .Video2 {
+        height: 200px;
+        width: 300px;
+        margin-right: 3rem;
+    }
+
+    .Video3 {
+        height: 200px;
+        width: 300px;
+        margin-right: 3rem;
+    }
+
+    .Video4 {
+        height: 250px;
+        width: 300px;
+    }
+
+    .Video5 {
+        height: 200px;
+        width: 300px;
+        margin-right: 3rem;
+    }
+    
+}
