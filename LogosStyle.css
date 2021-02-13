@@ -146,7 +146,7 @@ footer {
 
 /*Responsive------------------------------------------------------------------------------------------------*/
 
-@media (max-width: 900px) {
+@media (max-width: 1024px) {
 
     .pagLogos {
         font-size: 30px;
@@ -215,7 +215,7 @@ footer {
 
     .Descripcion {
         font-size: 20px;
-        transform: translateY(-10rem);
+        transform: translateY(-8rem);
     }
 
     .fas.fa-chevron-circle-left {
